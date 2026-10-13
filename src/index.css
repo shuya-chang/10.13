@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Syne:wght@600;700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Noto Sans TC', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Syne', 'Noto Sans TC', sans-serif;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background: #090a0e;
+  color: #e7e3db;
+  font-family: var(--font-sans);
+}
+
+#root {
+  min-height: 100dvh;
+}
+
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.03em;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 99px;
+}
